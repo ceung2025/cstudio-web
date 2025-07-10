@@ -1,2 +1,3 @@
-# cstudio-web
-Website Tiktok Video Downloader for Medtools Creative Team
+# CStudio Web
+
+UI project for downloading TikTok content.
