@@ -86,21 +86,21 @@ export default function Home() {
       </Head>
 
       <div className="min-h-screen bg-gradient-to-br from-sky-400 to-blue-900 text-gray-900 flex flex-col items-center justify-center p-6 font-poppins">
-        {/* Header & Logo */}
+        {/* Logo */}
         <div className="w-full flex justify-end items-center px-4">
           <img src="/medtools-logo.png" alt="Medtools Logo" className="w-16 h-16" />
         </div>
 
-        {/* CSTUDIO Hero */}
+        {/* Hero */}
         <div className="mt-[-5rem] text-center">
           <h1 className="text-white text-[6rem] font-extrabold tracking-wide leading-none">
             CSTUDIO
           </h1>
           <p className="text-white mt-2 text-lg font-semibold">
-            Unstoppable Creativity | <span className="text-white font-bold">FYP FYP FYP</span>
+            Unstoppable Creativity | <span className="font-bold">FYP FYP FYP</span>
           </p>
           <p className="text-white text-sm mt-1">
-            Paste your link Profile Account and Download all of your Content.
+            Paste your profile link and download your content ✨
           </p>
         </div>
 
@@ -110,7 +110,7 @@ export default function Home() {
             <FaSearch className="text-blue-600 mr-4" />
             <input
               type="text"
-              placeholder="Insert Your Link Here..."
+              placeholder="Insert Your TikTok Profile Link..."
               value={link}
               onChange={(e) => setLink(e.target.value)}
               className="flex-1 outline-none text-gray-700 placeholder-gray-400"
@@ -132,7 +132,7 @@ export default function Home() {
             rows={4}
             value={batchLinks}
             onChange={(e) => setBatchLinks(e.target.value)}
-            placeholder="Paste TikTok video links (satu per baris)..."
+            placeholder="Paste multiple TikTok video links (satu per baris)..."
             className="w-full p-4 rounded-lg shadow-md border border-gray-300 focus:outline-none resize-none"
           ></textarea>
           <button
@@ -173,33 +173,33 @@ export default function Home() {
           </div>
         )}
 
-        {/* Form Info */}
+        {/* Info Form */}
         <div className="mt-10 bg-blue-50 rounded-3xl p-8 flex flex-col lg:flex-row gap-6 max-w-4xl w-full shadow-lg">
           <div className="flex-1 space-y-4">
             <div className="flex items-center">
-              <span className="font-semibold text-gray-700 w-40">Profile Name :</span>
+              <span className="font-semibold text-gray-700 w-40">Profile Name:</span>
               <input type="text" value={profileName} readOnly className="flex-1 px-4 py-2 rounded-md border border-gray-300 bg-gray-100 focus:outline-none" />
             </div>
             <div className="flex items-center">
-              <span className="font-semibold text-gray-700 w-40">Total Video :</span>
+              <span className="font-semibold text-gray-700 w-40">Total Video:</span>
               <input type="text" value={totalVideos} readOnly className="flex-1 px-4 py-2 rounded-md border border-gray-300 bg-gray-100 focus:outline-none" />
             </div>
             <div className="flex items-center">
-              <span className="font-semibold text-gray-700 w-40">Estimate Size :</span>
+              <span className="font-semibold text-gray-700 w-40">Estimated Size:</span>
               <input type="text" value={estimatedSize} readOnly className="flex-1 px-4 py-2 rounded-md border border-gray-300 bg-gray-100 focus:outline-none" />
             </div>
           </div>
 
           <div className="flex-1 space-y-4">
             <div className="flex items-center">
-              <span className="font-semibold text-gray-700 w-28">Start Date :</span>
+              <span className="font-semibold text-gray-700 w-28">Start Date:</span>
               <div className="relative w-full">
                 <FaCalendarAlt className="absolute top-3 left-3 text-gray-500" />
                 <input type="date" value={startDate} onChange={(e) => setStartDate(e.target.value)} className="w-full pl-10 pr-4 py-2 rounded-md border border-gray-300 focus:outline-none" />
               </div>
             </div>
             <div className="flex items-center">
-              <span className="font-semibold text-gray-700 w-28">End Date :</span>
+              <span className="font-semibold text-gray-700 w-28">End Date:</span>
               <div className="relative w-full">
                 <FaCalendarAlt className="absolute top-3 left-3 text-gray-500" />
                 <input type="date" value={endDate} onChange={(e) => setEndDate(e.target.value)} className="w-full pl-10 pr-4 py-2 rounded-md border border-gray-300 focus:outline-none" />
